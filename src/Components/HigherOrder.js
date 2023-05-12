@@ -8,9 +8,9 @@ const HigherOrder = (MainFunctionalComponent) => {
         }
   return (
     
-      <div>
+      <>
         <MainFunctionalComponent value={count} submit={handleClick}/>
-      </div>
+      </>
   
   )
     }

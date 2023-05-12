@@ -1,4 +1,5 @@
 import React, {useMemo, useState} from 'react'
+import '../App.css'
 
 const PureComponent = () => {
     const [count, setCount]=useState(0)
@@ -7,9 +8,10 @@ const PureComponent = () => {
         setCount(count+1)
     }
   return (
-    <div>
+    <div className='PureComponent'>
+        <h1> {memoCount}</h1>
         <button onClick={handleSubmit} >
-            {memoCount}
+           Pure Component
         </button>
       
     </div>
